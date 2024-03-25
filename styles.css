@@ -116,6 +116,66 @@ header, footer{
     background: linear-gradient(to right, rgb(21, 228, 228), rgb(243, 22, 232), rgb(247, 99, 14));
 }
 
+/* Remove bullet points and text-decoration */
+nav {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+  }
+  
+  /* Change font properties */
+  nav a {
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    color: #4f14f0; /* Change font color */
+  }
+  nav ul li{
+    list-style-type: none;
+    border: 0.1rem solid #333;
+  }
+  nav{
+    background-color:azure;
+    padding: 0 1rem 2rem 1rem;
+    text-align: center;
+  }
+  nav ul li a{
+    color: #333;
+    font-variant: small-caps;
+    font-size: 1.25rem;
+    background-color: #f2f2f2;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  nav ul li a :hover {
+    color: white;
+    background-color: #333;
+    border: 0.1rem solid white;
+  }
+
+  #home-link{
+    width : 49.5%;
+    float : left;
+  }
+  #contact-link{
+    width : 49.5%;
+    float : left;
+  }
+  section ol li{
+    list-style-type: lower-alpha;
+    list-style-type: upper-alpha;
+    list-style-type: lower-roman;
+    list-style-type: upper-roman;
+  }
+  section ul li{
+    list-style-type: circle;
+    list-style-type: square;
+  }
+
 /*Added a ruleset for biography blockquote to align the text to left*/
 #bio{
     text-align: left;
@@ -127,3 +187,153 @@ header, footer{
     padding: 16px;
     box-shadow: 10px 10px 20px rgb(10, 25, 240), -10px 10px 15px rgb(14, 231, 86), -10px -10px 15px rgb(248, 9, 101);    
 }
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+  }
+  
+  table, th, td {
+    border: 1px solid #000; 
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: center; 
+    font-weight: bold; 
+    font-style: italic; 
+    font-variant: small-caps; 
+    color: #333; 
+  }
+  
+  th {
+    background-color: #f2f2f2; 
+  }
+
+  /* Remove bullet points and text-decoration */
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li a {
+    text-decoration: none;
+  }
+  
+ 
+  
+  /* Increase line-height */
+  ul li a {
+    line-height: 1.5; 
+  }
+  
+  ul li a:hover {
+    color: #ff6600;
+  }
+
+  /* Form */
+form {
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    margin: 0 auto; 
+    max-width: 500px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* Labels */
+  label {
+    color: #333; 
+    font-weight: bold; 
+    font-variant: small-caps; 
+    display: block; 
+    margin-bottom: 5px; 
+  }
+  
+  /* Input Controls */
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+  }
+  
+
+  
+  /* Default styles */
+html {
+    font-size: 16px; /* Base font size */
+  }
+  
+  /* Adjustments for smaller screens */
+  @media only screen and (max-width: 768px) {
+    html {
+      font-size: 14px; /* Decrease font size for smaller screens */
+    }
+  
+    /* Adjust widths and alignments */
+    form {
+      width: 90%; /* Reduce form width */
+      margin: 0 auto; /* Center the form */
+    }
+  
+    label,
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%; /* Set width to 100% */
+    }
+  }
+  
+  /* Adjustments for medium screens */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+      font-size: 15px; /* Adjust font size for medium screens */
+    }
+  
+    /* Adjust widths and alignments */
+    form {
+      width: 80%; /* Adjust form width */
+      margin: 0 auto; /* Center the form */
+    }
+  
+    label {
+      text-align: center; /* Center align labels */
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 80%; /* Adjust input width */
+      margin: 0 auto; /* Center the input */
+    }
+  }
+  
+  /* Adjustments for larger screens */
+  @media only screen and (min-width: 1024px) {
+    html {
+      font-size: 16px; /* Reset font size for larger screens */
+    }
+  
+    /* Adjust widths and alignments */
+    form {
+      width: 60%; /* Adjust form width */
+      margin: 0 auto; /* Center the form */
+    }
+  
+    label {
+      text-align: center; /* Right align labels */
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 60%; /* Adjust input width */
+      margin-left: 10px; /* Add margin to align input */
+    }
+  }
+  
